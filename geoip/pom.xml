@@ -9,14 +9,14 @@
 	<packaging>war</packaging>
 	<name>geoip</name>
 	<description>Project that given an IP it defines it location</description>
-	
+
 	<properties>
 		<failOnMissingWebXml>false</failOnMissingWebXml>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
-	
+
 	<build>
 		<finalName>geoip</finalName>
 	</build>
@@ -25,6 +25,12 @@
 			<groupId>javax</groupId>
 			<artifactId>javaee-api</artifactId>
 			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.maxmind.geoip2</groupId>
+			<artifactId>geoip2</artifactId>
+			<version>2.12.0</version>
 		</dependency>
 	</dependencies>
 	<dependencyManagement>
